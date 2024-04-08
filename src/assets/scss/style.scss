@@ -1,0 +1,7 @@
+@use './Partial/common';
+@use './Partial/header';
+@use './Partial/main';
+@use './Partial/footer';
+body{
+    background-color: green;
+}
