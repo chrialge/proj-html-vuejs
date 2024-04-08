@@ -184,6 +184,16 @@ export default {
 
         </div>
     </section>
+    <!-- /#blog -->
+
+    <section id="banner">
+        <div class="info_banner">
+            <h1>LET'S TALK ABOUT WORK</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor?</p>
+            <button>get started</button>
+        </div>
+    </section>
+    <!-- /#banner -->
 </template>
 
 <style></style>
