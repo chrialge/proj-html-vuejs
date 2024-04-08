@@ -1,0 +1,66 @@
+@use './variable' as *;
+
+#site_footer{
+    .container{
+        width: 85%;
+        max-width: 1900px;
+        margin: auto;
+
+        .footer_top{
+            display: flex;
+            justify-content: space-between;
+
+            .navbar{
+
+                ul{
+                    list-style: none;
+                    display: flex;
+                    gap: 1rem;
+
+                    li{
+
+                        a{
+                            text-decoration: none;
+                            color: $phlox-text-footer;
+                        }
+                    }
+                }
+            }
+
+            .social{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    gap: 1rem;
+
+                    li{
+
+                        a{
+                            text-decoration: none;
+                            color: $phlox-text-light;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .policy{
+                
+                ul{
+                    list-style: none;
+
+                    li{
+                        a{
+                            color: $phlox-text-footer;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
