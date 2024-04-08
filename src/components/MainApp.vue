@@ -1,6 +1,11 @@
 <script>
+import Jumbotron from './components-section/Jumbotron.vue'
+
 export default {
     name: 'MainApp',
+    components:{
+        Jumbotron,
+    },
     data() {
         return {
             msg: 'main'
@@ -10,14 +15,8 @@ export default {
 </script>
 
 <template>
-    <section id="jumbotron">
-        <div class="left">
-            <h1>Lorem, ipsum</h1>
-        </div>
-        <div class="right">
-            <h1>Lorem, ipsum.</h1>
-        </div>
-    </section>
+    
+    <Jumbotron/>
     <!-- /#jumbotron -->
 
     <section id="our-consultation">

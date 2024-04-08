@@ -3,7 +3,15 @@ export default {
   name: 'HeaderApp',
   data() {
     return {
-      msg: 'header'
+      msg: 'header',
+      navbar:[
+        {name:'HOME', href:'#jumbotron'},
+        {name:'ABOUT', href:'#about-us'},
+        {name:'PROJECTS', href:'#projects'},
+        {name:'SERVICES', href:'#testimonials'},
+        {name:'BLOG', href:'#blog'},
+        {name:'CONTACT', href:'#site-footer'}
+      ]
     }
   }
 }
@@ -21,12 +29,7 @@ export default {
       <!-- right -->
       <div class="right">
         <ul>
-          <li><a href="#jumbotron">HOME</a></li>
-          <li><a href="#about-us">ABOUT</a></li>
-          <li><a href="#project">PROJECTS</a></li>
-          <li><a href="#testimonials">SERVICES.</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#site_footer">CONTACT</a></li>
+          <li v-for="section in navbar"><a :href="section.href">{{ section.name }}</a></li>
         </ul>
       </div>
     </nav>
