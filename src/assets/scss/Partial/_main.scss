@@ -10,14 +10,44 @@
         align-items: center;
         padding-left: 10%;
 
-        h1{
-
-        }
     }
     .right{
         flex-grow: 1;
         height: 600px;
         display: flex;
         align-items: center;
+    }
+}
+
+#our-consultation{
+
+    .container{
+        max-width: 1400px;
+        width: 75%;
+        margin: auto;
+
+        .title{
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+
+            hr{
+                color: $phlox-text-hover;
+                width: 100px;
+                height: 2px;
+            }
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+
+            .col-6{
+                width: calc(50% - 4rem);
+                display: flex;
+            }
+
+        }
     }
 }
