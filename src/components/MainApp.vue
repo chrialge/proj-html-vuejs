@@ -10,10 +10,15 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>Sono il Main</h1>
-        <p>{{ msg }}</p>
-    </div>
+    <section id="jumbotron">
+        <div class="left">
+            <h1>Lorem, ipsum.</h1>
+        </div>
+        <div class="right">
+            
+        </div>
+    </section>
+    <!-- /#jumbotron -->
 </template>
 
 <style></style>

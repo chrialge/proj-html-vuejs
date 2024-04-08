@@ -18,12 +18,9 @@ export default {
 }
 </script>
 <template>
-  <h1>{{ msg }}</h1>
-  <div>
     <HeaderApp />
     <MainApp />
     <FooterApp />
-  </div>
 </template>
 
 <style lang="scss"></style>
