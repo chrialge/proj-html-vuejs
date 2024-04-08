@@ -15,10 +15,11 @@ export default {
             <h1>Lorem, ipsum.</h1>
         </div>
         <div class="right">
-            
+            <h1>Lorem, ipsum.</h1>
         </div>
     </section>
     <!-- /#jumbotron -->
+
 </template>
 
 <style></style>

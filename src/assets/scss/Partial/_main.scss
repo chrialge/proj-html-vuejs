@@ -1,0 +1,23 @@
+@use './variable' as *;
+
+#jumbotron{
+    display: flex;
+
+    .left{
+        width: calc((100% / 12) * 4);
+        height: 600px;
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+
+        h1{
+
+        }
+    }
+    .right{
+        flex-grow: 1;
+        height: 600px;
+        display: flex;
+        align-items: center;
+    }
+}
