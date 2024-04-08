@@ -54,7 +54,7 @@
 
 #about-us{
     .container{
-        
+        padding-bottom: 100px;
         display: flex;
         flex-wrap: wrap;
         .left{
@@ -90,6 +90,7 @@
 }
 
 #project{
+    padding-bottom: 100px;
 
     .container{
         max-width: 1900px;
@@ -109,6 +110,44 @@
             .col-3{
                 width: calc((100% / 12)*4);
 
+            }
+        }
+    }
+}
+
+#testimonial{
+
+    .container{
+        margin-left: 7.5%;
+
+        .container_header{
+            margin-right: 7.5%;
+        
+            .section{
+                text-align: center;
+            }
+
+            h1{
+                margin-left: 60%;
+                text-align: end;
+            }
+        }
+
+        .container_testimonials{
+            padding-right: 7.5%;
+            background-color: white;
+
+            .testimonials{
+                display: flex;
+                padding: 20px;
+                gap: 3.5rem;
+
+                .testimonial{
+
+                    p{
+                        margin-bottom: 30px;
+                    }
+                }
             }
         }
     }

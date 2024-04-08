@@ -112,6 +112,55 @@ export default {
         </div>
     </section>
     <!-- /#project -->
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="container_header">
+                <div class="section">
+                    <span>testimonial</span>
+                    <hr>
+                </div>
+                <h1>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h1>
+            </div>
+            <div class="container_testimonials">
+                <div class="testimonials">
+                    <div class="testimonial col-3">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates, delectus
+                            nesciunt odio debitis commodi blanditiis quo accusamus quos laboriosam.
+                        </p>
+                        <h5>
+                            Lorem, ipsum.
+                        </h5>
+                        <span>Lorem.</span>
+                    </div>
+                    <div class="testimonial col-3">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates, delectus
+                            nesciunt odio debitis commodi blanditiis quo accusamus quos laboriosam.
+                        </p>
+                        <h5>
+                            Lorem, ipsum.
+                        </h5>
+                        <span>Lorem.</span>
+                    </div>
+                    <div class="testimonial col-3">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates, delectus
+                            nesciunt odio debitis commodi blanditiis quo accusamus quos laboriosam.
+                        </p>
+                        <h5>
+                            Lorem, ipsum.
+                        </h5>
+                        <span>Lorem.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- /#testimonial -->
 </template>
 
 <style></style>
