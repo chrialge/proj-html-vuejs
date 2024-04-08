@@ -51,3 +51,65 @@
         }
     }
 }
+
+#about-us{
+    .container{
+        
+        display: flex;
+        flex-wrap: wrap;
+        .left{
+            width: calc((100% /12) * 6);
+            height: 600px;
+        }
+        .right{
+            width: calc((100% /12) * 5);
+            align-self: center;
+            padding: 0  30px;
+
+            &>*{
+                margin-bottom: 20px;
+            }
+        }
+        .banner{
+            width: calc((100% /12) * 11);
+            padding: 20px ;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            .left_banner{
+                text-align: center;
+            }
+
+            button{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+#project{
+
+    .container{
+        max-width: 1900px;
+        width: 85%;
+        margin: auto;
+
+        .header-project{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row{
+            display: flex;
+            gap: 1rem;
+            height: 100px;
+
+            .col-3{
+                width: calc((100% / 12)*4);
+
+            }
+        }
+    }
+}
