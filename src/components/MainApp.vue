@@ -161,6 +161,29 @@ export default {
 
     </section>
     <!-- /#testimonial -->
+
+    <section id="blog">
+        <div class="container">
+            <div class="section">
+                <hr>
+                <span>BLOG</span>
+            </div>
+            <div class="header-blog">
+                <h1>THE RECENT NEWS YOU MUST READ IT</h1>
+                <button>view all</button>
+            </div>
+            <div class="row">
+                <div class="img col-2">
+                    <div class="banner-img">Lorem, ipsum dolor.</div>
+                </div>
+                <div class="img col-2">
+                    <div class="banner-img">Lorem, ipsum dolor.</div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 </template>
 
 <style></style>

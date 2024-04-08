@@ -116,7 +116,7 @@
 }
 
 #testimonial{
-
+    margin-bottom: 100px;
     .container{
         margin-left: 7.5%;
 
@@ -147,6 +147,40 @@
                     p{
                         margin-bottom: 30px;
                     }
+                }
+            }
+        }
+    }
+}
+
+#blog{
+    margin-bottom: 100px;
+
+    .container{
+        max-width: 1900px;
+        width: 85%;
+        margin: auto;
+
+        .header-blog{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row{
+            display: flex;
+            gap: 1rem;
+
+            .col-2{
+                width: 50%;
+                height: 400px;
+                position: relative;
+
+                .banner-img{
+                    position: absolute;
+                    padding: 30px;
+                    right: 0;
+                    bottom: 0;
+                    margin-bottom: -20px;
                 }
             }
         }
