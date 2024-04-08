@@ -14,6 +14,10 @@
         justify-content: space-between;
         align-items: center;
 
+        .logo>img{
+            width: 90px;
+        }
+
         .right{
             
             ul{
@@ -23,14 +27,19 @@
 
                 li{
                     padding: 15px 0;
+                    
 
                     a{
                         text-decoration: none;
                         color: $phlox-text-paragraph;
                     }
+                    &:hover{
+                        border-top: 3px solid;
+                    }
 
                     &:hover, &:hover a{
                         color: $phlox-text-light;
+                        font-weight: 800;
                     }
                 }
             }

@@ -14,17 +14,19 @@ export default {
   <header id="site_header">
     <nav>
       <!-- left -->
-      <div class="left">LOrem</div>
+      <div class="logo">
+        <img src="../../public/images/logotype.png" alt="">
+      </div>
 
       <!-- right -->
       <div class="right">
         <ul>
-          <li><a href="#">Lorem.</a></li>
-          <li><a href="#">Quidem.</a></li>
-          <li><a href="#">Quam!</a></li>
-          <li><a href="#">Voluptatum.</a></li>
-          <li><a href="#">Laborum?</a></li>
-          <li><a href="#">Modi!</a></li>
+          <li><a href="#jumbotron">HOME</a></li>
+          <li><a href="#about-us">ABOUT</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#testimonials">SERVICES.</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#site_footer">CONTACT</a></li>
         </ul>
       </div>
     </nav>
