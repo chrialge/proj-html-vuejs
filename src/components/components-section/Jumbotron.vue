@@ -11,10 +11,24 @@ export default {
 <template>
     <section id="jumbotron">
         <div class="left">
-            <h1>Lorem, ipsum</h1>
+            <div class="jumbotron_info">
+                <div class="section">
+                    <div class="separeted_small"></div>
+                    <span>ALWATS THE BEST WAY YOU NEED IT</span>
+                </div>
+                <h1>THE BEST BUSINESS CONSULTING</h1>
+                <div class="btn-jumbotron">
+                    <button class="btn">
+                        READ MORE
+                    </button>
+                    <button class="btn-play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
         </div>
         <div class="right">
-            <h1>Lorem, ipsum.</h1>
         </div>
     </section>
 </template>

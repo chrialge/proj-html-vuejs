@@ -5,21 +5,58 @@
 
     .left{
         width: calc((100% / 12) * 4);
-        height: 600px;
         display: flex;
         align-items: center;
         padding-left: 10%;
 
+        .jumbotron_info{
+            z-index: 5;
+            .section{
+                display: flex;
+                align-items: baseline;
+
+                .separeted_small{
+                    margin-right: 15px;
+                }
+
+            }
+            h1{
+                font-size: 90px;
+                width: 800px;
+                margin-bottom: 30px;
+            }
+            .btn-jumbotron{
+                
+                .btn{
+                    padding: 15px 40px;
+                    border: none;
+                    background-color: $phlox-bg-important;
+                    cursor: pointer;
+                }
+
+                .btn-play{
+                    color: $phlox-bg-important;
+                    background-color: transparent;
+                    border: 0.1rem solid $phlox-border-light;
+                    padding: 7.5px 13px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    margin-left: 35px;
+                    cursor: pointer;
+                }
+            }
+        }
     }
     .right{
-        flex-grow: 1;
-        height: 600px;
-        display: flex;
-        align-items: center;
+        width: calc((100% / 12)*8);
+        height: 1000px;
+        background-image: url('../../../../public/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');
     }
 }
 
 #our-consultation{
+    background-color: $phlox-bg-light;
+    color: $phlox-text-dark;
 
     .container{
         max-width: 1400px;
@@ -27,7 +64,7 @@
         margin: auto;
 
         .title{
-            margin: 40px 0;
+            padding: 40px 0;
             display: flex;
             align-items: center;
 

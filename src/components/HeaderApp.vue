@@ -21,17 +21,20 @@ export default {
   <!-- site-header -->
   <header id="site_header">
     <nav>
-      <!-- left -->
+      <!-- logo -->
       <div class="logo">
         <img src="../../public/images/logotype.png" alt="">
       </div>
+      <!-- /logo -->
 
-      <!-- right -->
-      <div class="right">
+      <!-- navbar -->
+      <div class="navbar">
         <ul>
           <li v-for="section in navbar"><a :href="section.href">{{ section.name }}</a></li>
         </ul>
       </div>
+      <!-- /navbar -->
+
     </nav>
   </header>
   <!-- site-header -->
