@@ -116,28 +116,57 @@
         flex-wrap: wrap;
         .left{
             width: calc((100% /12) * 6);
-            height: 600px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
         .right{
             width: calc((100% /12) * 5);
             align-self: center;
-            padding: 0  30px;
+            padding: 0  80px;
 
             &>*{
                 margin-bottom: 20px;
             }
+
+            .section >div{
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            h1{
+                font-size: 50px;
+            }
+            p{
+                color: $phlox-text-paragraph;
+                font-size: 13px;
+            }
         }
         .banner{
+            color: $phlox-text-dark;
+            background-color: $phlox-bg-important;
             width: calc((100% /12) * 11);
-            padding: 20px ;
+            padding: 100px ;
             position: relative;
             display: flex;
             justify-content: space-evenly;
-            .left_banner{
-                text-align: center;
+
+            .left_banner, .right_banner{
+
+                width: 280px;
+            }
+            .right_banner{
+                font-size: 12px;
             }
 
             button{
+                cursor: pointer;
+                padding: 15px 40px;
+                color: $phlox-text-light;
+                background-color: $phlox-bg-btn-primary;
+                border: none;
                 position: absolute;
                 right: 0;
                 bottom: 0;

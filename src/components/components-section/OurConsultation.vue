@@ -4,10 +4,10 @@ export default {
     data() {
         return {
             dataConsulting: [
-                {icon: '<i class="fa-solid fa-chart-line"></i>', title:'STATIC CONSULTING'},
-                {icon: '<i class="fa-solid fa-bullhorn"></i>', title:'DIGITAL CONSULTING'},
-                {icon: '<i class="fa-solid fa-wallet"></i>', title:'BANKING CONSULTING'},
-                {icon: '<i class="fa-solid fa-bullseye"></i>', title:'ENTERPRISE CONSULTING'},
+                { icon: '<i class="fa-solid fa-chart-line"></i>', title: 'STATIC CONSULTING' },
+                { icon: '<i class="fa-solid fa-bullhorn"></i>', title: 'DIGITAL CONSULTING' },
+                { icon: '<i class="fa-solid fa-wallet"></i>', title: 'BANKING CONSULTING' },
+                { icon: '<i class="fa-solid fa-bullseye"></i>', title: 'ENTERPRISE CONSULTING' },
 
             ]
         }
@@ -30,7 +30,8 @@ export default {
                     <div class="info">
                         <h4>{{ consulting.title }}</h4>
                         <p>
-                            When, while lovely valley teems with vapour around meand eridian sun strikes the upper impernetraable foliage of my trees, and but a
+                            When, while lovely valley teems with vapour around meand eridian sun strikes the upper
+                            impernetraable foliage of my trees, and but a
                         </p>
                     </div>
                 </div>
