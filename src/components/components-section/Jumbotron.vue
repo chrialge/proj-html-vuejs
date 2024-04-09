@@ -10,9 +10,9 @@ export default {
 </script>
 <template>
     <section id="jumbotron">
-        <div class="left">
+        <div class="left d-flex col-4">
             <div class="jumbotron_info">
-                <div class="section">
+                <div class="section d-flex">
                     <div class="separeted_small"></div>
                     <span>ALWATS THE BEST WAY YOU NEED IT</span>
                 </div>
@@ -28,7 +28,7 @@ export default {
             </div>
 
         </div>
-        <div class="right">
+        <div class="right col-8">
         </div>
     </section>
 </template>

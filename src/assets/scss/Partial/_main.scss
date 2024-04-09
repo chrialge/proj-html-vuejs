@@ -4,8 +4,6 @@
     display: flex;
 
     .left {
-        width: calc((100% / 12) * 4);
-        display: flex;
         align-items: center;
         padding-left: 10%;
 
@@ -13,7 +11,6 @@
             z-index: 5;
 
             .section {
-                display: flex;
                 align-items: baseline;
 
                 .separeted_small {
@@ -45,7 +42,6 @@
     }
 
     .right {
-        width: calc((100% / 12)*8);
         height: 1000px;
         background-image: url('../../../../public/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');
         background-repeat: no-repeat;
@@ -58,38 +54,34 @@
     color: $phlox-text-dark;
     padding: 80px 0;
 
-    .container {
+    .container-sm {
         max-width: 1400px;
         width: 75%;
         margin: auto;
 
         .title {
             padding-bottom: 40px;
-            display: flex;
             align-items: center;
 
             .width-long {
                 width: 60%;
-                position: absolute;
                 right: 0;
             }
         }
 
         .row {
-            display: flex;
             flex-wrap: wrap;
             gap: 100px;
 
-            .col-6 {
+            .col-6-50 {
                 width: calc(50% - 50px);
-                display: flex;
 
                 .icon>i {
                     padding: 10px;
                     background-color: $phlox-bg-btn-primary;
                     border-radius: 50%;
                     font-size: 25px;
-                    color: white;
+                    color: $phlox-text-light;
                     margin-right: 30px;
 
                 }
@@ -98,8 +90,6 @@
 
                     p {
                         padding-top: 15px;
-                        font-size: 13px;
-                        color: $phlox-text-paragraph;
                     }
                 }
             }
@@ -109,22 +99,17 @@
 }
 
 #about-us {
-    .container {
+    .container_fluid {
         padding-bottom: 100px;
-        display: flex;
         flex-wrap: wrap;
 
-        .left {
-            width: calc((100% /12) * 6);
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
+        .left>img {
+            width: 100%;
+            height: 100%;
         }
 
+
         .right {
-            width: calc((100% /12) * 5);
             align-self: center;
             padding: 0 80px;
 
@@ -140,20 +125,12 @@
             h1 {
                 font-size: 50px;
             }
-
-            p {
-                color: $phlox-text-paragraph;
-                font-size: 13px;
-            }
         }
 
         .banner {
             color: $phlox-text-dark;
             background-color: $phlox-bg-important;
-            width: calc((100% /12) * 11);
             padding: 100px;
-            position: relative;
-            display: flex;
             justify-content: space-evenly;
 
             .left_banner,
@@ -172,7 +149,6 @@
                 color: $phlox-text-light;
                 background-color: $phlox-bg-btn-primary;
                 border: none;
-                position: absolute;
                 right: 0;
                 bottom: 0;
             }
@@ -212,7 +188,7 @@
         }
 
         .row {
-            .col-3>img {
+            .col-4>img {
                 width: 100%;
             }
 
@@ -223,11 +199,11 @@
 #testimonial {
     margin-bottom: 100px;
 
-    .container {
-        margin-left: 7.5%;
+    .container_testimonial {
+        margin-left: 10%;
 
         .container_header {
-            margin-right: 7.5%;
+            margin-right: 10%;
             padding-bottom: 40px;
 
             .section {

@@ -32,7 +32,7 @@ export default {
                 </div>
             </div>
             <div class="row d-flex gap-1">
-                <div class="col-3" v-for="img in images">
+                <div class="col-4" v-for="img in images">
                     <img :src="'../../../public/images/' + img" alt="">
                 </div>
             </div>
