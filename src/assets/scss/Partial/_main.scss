@@ -57,6 +57,7 @@
 #our-consultation{
     background-color: $phlox-bg-light;
     color: $phlox-text-dark;
+    padding: 80px 0;
 
     .container{
         max-width: 1400px;
@@ -64,25 +65,44 @@
         margin: auto;
 
         .title{
-            padding: 40px 0;
+            padding-bottom: 40px;
             display: flex;
             align-items: center;
 
-            hr{
-                color: $phlox-text-hover;
-                width: 100px;
-                height: 2px;
+            .width-long{
+                width: 60%;
+                position: absolute;
+                right: 0;
             }
         }
 
         .row{
             display: flex;
             flex-wrap: wrap;
-            gap: 4rem;
+            gap: 100px;
 
             .col-6{
-                width: calc(50% - 4rem);
+                width: calc(50% - 50px);
                 display: flex;
+
+                .icon > i{
+                    padding: 10px;
+                    background-color: $phlox-bg-btn-primary;
+                    border-radius: 50%;
+                    font-size: 25px;
+                    color: white;
+                    margin-right: 30px;
+
+                }
+
+                .info{
+
+                    p{
+                        padding-top: 15px;
+                        font-size: 13px;
+                        color: $phlox-text-paragraph;
+                    }
+                }
             }
 
         }

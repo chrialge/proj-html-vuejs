@@ -1,10 +1,12 @@
 <script>
-import Jumbotron from './components-section/Jumbotron.vue'
+import Jumbotron from './components-section/Jumbotron.vue';
+import OurConsultation from './components-section/OurConsultation.vue';
 
 export default {
     name: 'MainApp',
-    components:{
+    components: {
         Jumbotron,
+        OurConsultation,
     },
     data() {
         return {
@@ -15,49 +17,11 @@ export default {
 </script>
 
 <template>
-    
-    <Jumbotron/>
+
+    <Jumbotron />
     <!-- /#jumbotron -->
 
-    <section id="our-consultation">
-        <div class="container">
-            <div class="title">
-                <h1>OUR CONSULTANTS CAN HELP YOU</h1>
-                <hr>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="left">Lorem.</div>
-                    <div class="right">
-                        <h1>Lorem, ipsum.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?</p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="left">Lorem.</div>
-                    <div class="right">
-                        <h1>Lorem, ipsum.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?</p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="left">Lorem.</div>
-                    <div class="right">
-                        <h1>Lorem, ipsum.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?</p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="left">Lorem.</div>
-                    <div class="right">
-                        <h1>Lorem, ipsum.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+    <OurConsultation/>
     <!-- /#our-consultation -->
 
     <section id="about-us">
