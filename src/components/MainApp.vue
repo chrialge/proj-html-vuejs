@@ -2,6 +2,7 @@
 import Jumbotron from './components-section/Jumbotron.vue';
 import OurConsultation from './components-section/OurConsultation.vue';
 import AboutUs from './components-section/AboutUs.vue'
+import Project from './components-section/Project.vue'
 
 export default {
     name: 'MainApp',
@@ -9,6 +10,7 @@ export default {
         Jumbotron,
         OurConsultation,
         AboutUs,
+        Project,
     },
     data() {
         return {
@@ -29,27 +31,7 @@ export default {
     <AboutUs/>
     <!-- /#about-us -->
 
-    <section id="project">
-        <div class="container">
-            <div class="section">
-                <hr>
-                <span>PROJECT</span>
-            </div>
-            <div class="header-project">
-                <h1>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h1>
-                <div class="btn-prev-next">
-                    <button>prev</button>
-                    <button>next</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">Lorem, ipsum.</div>
-                <div class="col-3">Dolores, quisquam?</div>
-                <div class="col-3">Fugit, nemo?</div>
-            </div>
-
-        </div>
-    </section>
+    <Project/>
     <!-- /#project -->
 
     <section id="testimonial">
