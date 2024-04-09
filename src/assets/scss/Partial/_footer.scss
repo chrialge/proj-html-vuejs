@@ -2,26 +2,20 @@
 
 #site_footer{
     .container{
-        width: 85%;
-        max-width: 1900px;
-        margin: auto;
 
         .footer_top{
-            display: flex;
             justify-content: space-between;
-
+            padding: 60px 0;
             .navbar{
 
                 ul{
                     list-style: none;
-                    display: flex;
-                    gap: 1rem;
 
                     li{
 
                         a{
                             text-decoration: none;
-                            color: $phlox-text-footer;
+                            color: $phlox-bg-btn-next-prev;
                         }
                     }
                 }
@@ -30,8 +24,6 @@
             .social{
                 ul{
                     list-style: none;
-                    display: flex;
-                    gap: 1rem;
 
                     li{
 
@@ -44,8 +36,13 @@
             }
         }
 
+        .separeted-footer{
+            background-color: $phlox-bg-btn-next-prev;
+            height: 1px;
+        }
         .footer-bottom{
-            display: flex;
+            padding: 60px 0;
+            color: $phlox-bg-btn-next-prev;
             align-items: center;
             justify-content: space-between;
             .policy{
@@ -55,7 +52,7 @@
 
                     li{
                         a{
-                            color: $phlox-text-footer;
+                            color: $phlox-bg-btn-next-prev;
                             text-decoration: none;
                         }
                     }

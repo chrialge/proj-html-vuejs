@@ -24,16 +24,16 @@ export default {
                 <h1>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h1>
                 <div class="btn-prev-next">
                     <button>
-                        <img src="../../../public/images/prev.png" alt="">
+                        <img src="/public/images/prev.png" alt="">
                     </button>
                     <button>
-                        <img src="../../../public/images/next.png" alt="">
+                        <img src="/public/images/next.png" alt="">
                     </button>
                 </div>
             </div>
             <div class="row d-flex gap-1">
                 <div class="col-4" v-for="img in images">
-                    <img :src="'../../../public/images/' + img" alt="">
+                    <img :src="'/public/images/' + img" alt="">
                 </div>
             </div>
 

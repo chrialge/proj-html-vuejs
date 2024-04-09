@@ -43,7 +43,7 @@
 
     .right {
         height: 1000px;
-        background-image: url('../../../../public/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');
+        background-image: url('/public/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -179,7 +179,7 @@
 
                 button {
                     cursor: pointer;
-                    background-color: #36354C;
+                    background-color: $phlox-bg-btn-next-prev;
                     padding: 7px;
                     border: none;
                     margin-left: 5px;
@@ -305,7 +305,7 @@
 #banner {
     width: 100%;
     padding: 100px 0;
-    background-image: url(../../../../public/images/business-people-working-together-on-project-and-B3MZ4TX.jpg);
+    background-image: url('/public/images/business-people-working-together-on-project-and-B3MZ4TX.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -325,7 +325,7 @@
             color: $phlox-text-light;
             padding: 15px 40px;
             border: none;
-            background-color: #201E38;
+            background-color: $phlox-bg-btn-id-banner;
         }
     }
 }

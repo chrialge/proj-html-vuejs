@@ -12,7 +12,7 @@ export default {
     <section id="about-us">
         <div class="container_fluid d-flex">
             <div class="left col-6">
-                <img src="../../../public/images/business-people-working-together-on-project-and-5FHSKBL.jpg" 
+                <img src="/public/images/business-people-working-together-on-project-and-5FHSKBL.jpg" 
                 alt="people working together on project">
             </div>
             <div class="right col-5">
