@@ -18,9 +18,25 @@ export default {
 }
 </script>
 <template>
-    <HeaderApp />
-    <MainApp />
-    <FooterApp />
+
+
+  <HeaderApp />
+  <MainApp />
+  <FooterApp />
+
+  <div class="actions d-flex">
+    <div class="page-up">
+      <a href="#">
+        <i class="fa-solid fa-arrow-up-long"></i>
+      </a>
+    </div>
+    <div class="chat">
+      <a href="#">
+        <i class="fa-regular fa-comment"></i>
+      </a>
+    </div>
+  </div>
+
 </template>
 
 <style lang="scss"></style>

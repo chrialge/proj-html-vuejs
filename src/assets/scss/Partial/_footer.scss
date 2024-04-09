@@ -1,59 +1,71 @@
 @use './variable' as *;
 
-#site_footer{
-    .container{
+#site_footer {
+    .container {
 
-        .footer_top{
+        .footer_top {
             justify-content: space-between;
             padding: 60px 0;
-            .navbar{
 
-                ul{
+            .navbar {
+
+                ul {
                     list-style: none;
 
-                    li{
+                    li {
 
-                        a{
+                        a {
                             text-decoration: none;
-                            color: $phlox-bg-btn-next-prev;
+                            color: $phlox-text-footer;
                         }
-                    }
-                }
-            }
 
-            .social{
-                ul{
-                    list-style: none;
-
-                    li{
-
-                        a{
-                            text-decoration: none;
+                        &:hover a {
                             color: $phlox-text-light;
                         }
                     }
                 }
             }
+
+            .social {
+                ul {
+                    list-style: none;
+
+                    li {
+
+                        a {
+                            text-decoration: none;
+                            color: $phlox-text-light;
+                        }
+
+                    }
+                }
+            }
         }
 
-        .separeted-footer{
+        .separeted-footer {
             background-color: $phlox-bg-btn-next-prev;
             height: 1px;
         }
-        .footer-bottom{
+
+        .footer-bottom {
             padding: 60px 0;
-            color: $phlox-bg-btn-next-prev;
+            color: $phlox-text-footer;
             align-items: center;
             justify-content: space-between;
-            .policy{
-                
-                ul{
+
+            .policy {
+
+                ul {
                     list-style: none;
 
-                    li{
-                        a{
-                            color: $phlox-bg-btn-next-prev;
+                    li {
+                        a {
+                            color: $phlox-text-footer;
                             text-decoration: none;
+                        }
+
+                        &:hover a {
+                            color: $phlox-text-light;
                         }
                     }
                 }

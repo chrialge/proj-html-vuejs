@@ -18,7 +18,7 @@ export default {
             <div class="right col-5">
                 <div class="section">
                     <div class="separeted_small"></div>
-                    <span>ABOUT US</span>
+                    <span class="space-letter">ABOUT US</span>
                 </div>
                 <h1>WE MAKE YOUR STRATEGY WORK</h1>
                 <p class="paragraph">

@@ -17,7 +17,7 @@ export default {
         <div class="container">
             <div class="section">
                 <div class="separeted_small"></div>
-                <span>BLOG</span>
+                <span class="space-letter">BLOG</span>
             </div>
             <div class="header-blog d-flex">
                 <h1>THE RECENT NEWS YOU MUST READ IT</h1>

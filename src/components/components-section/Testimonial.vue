@@ -2,9 +2,13 @@
 export default {
     name: 'Testimonial',
     data() {
-
-
-        return {}
+        return {
+            testimonials:[
+                {img: 'oliver-ragfelt-488196-2.jpg', name: 'Vera Duncan'},
+                {img: 'oliver-ragfelt-488196-unsplash.jpg', name: 'Oliver Garrison'},
+                {img: '12679.jpg', name: 'John Smith'}
+            ]
+        }
     }
 }
 </script>
@@ -14,24 +18,30 @@ export default {
         <div class="container_testimonial">
             <div class="container_header">
                 <div class="section d-flex">
-                    <span class="col-6">TESTIMONIAL</span>
+                    <span class="col-6 space-letter">TESTIMONIAL</span>
                     <div class="container-separeted col-6">
-                       <div class="separeted_small"></div> 
+                        <div class="separeted_small"></div>
                     </div>
-                    
+
                 </div>
                 <h1>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h1>
             </div>
             <div class="container_testimonials">
                 <div class="testimonials d-flex">
-                    <div class="testimonial col-4" v-for="n in 3">
-                        <p class="paragraph">
-                            When, while lovely valley teems with vapour around meand eridian sun strikes the upper impernetraable foliage of my trees, and but a thousand unknow plant are noticed when i hear the buzz of the little.
-                        </p>
-                        <h4>
-                            Vera Duncan
-                        </h4>
-                        <span class="paragraph">Amazon inc.</span>
+                    <div class="testimonial col-4 posi-rela" v-for="testimonial in testimonials">
+                        <img class="posi-abso" :src="'/public/images/' + testimonial.img" alt="">
+                        <div class="info-testimonial">
+                            <p class="paragraph">
+                                When, while lovely valley teems with vapour around meand eridian sun strikes the upper
+                                impernetraable foliage of my trees, and but a thousand unknow plant are noticed when i
+                                hear the buzz of the little.
+                            </p>
+                            <h4>
+                                {{ testimonial.name }}
+                            </h4>
+                            <span class="paragraph">Amazon inc.</span>
+                        </div>
+
                     </div>
                 </div>
             </div>

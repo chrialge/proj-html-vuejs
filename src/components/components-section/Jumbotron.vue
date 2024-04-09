@@ -14,7 +14,7 @@ export default {
             <div class="jumbotron_info">
                 <div class="section d-flex">
                     <div class="separeted_small"></div>
-                    <span>ALWATS THE BEST WAY YOU NEED IT</span>
+                    <span class="space-letter">ALWATS THE BEST WAY YOU NEED IT</span>
                 </div>
                 <h1>THE BEST BUSINESS CONSULTING</h1>
                 <div class="btn-jumbotron">

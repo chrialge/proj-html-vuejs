@@ -3,3 +3,43 @@
 @use './Partial/header';
 @use './Partial/main';
 @use './Partial/footer';
+@use './Partial/variable' as *;
+
+
+.actions {
+    position: fixed;
+    z-index: 99;
+    bottom: 80px;
+    right: 50px;
+    gap: 1rem;
+    align-items: center;
+
+    .page-up {
+
+        a {
+            background-color: $phlox-bg-light;
+            padding: 5px 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: $phlox-text-dark;
+            box-shadow: 1px 1px 5px;
+        }
+
+    }
+
+    .chat {
+        width: 100%;
+        background-color: $phlox-bg-chat;
+        padding: 19px;
+        border-radius: 50%;
+
+        a {
+            text-decoration: none;
+            color: $phlox-text-light;
+
+            i {
+                font-size: 28px;
+            }
+        }
+    }
+}

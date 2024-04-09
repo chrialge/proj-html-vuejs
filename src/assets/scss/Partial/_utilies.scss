@@ -1,57 +1,92 @@
 @use './variable' as *;
 
-.separeted_small{
+// separeted
+.separeted_small {
     width: 35px;
     height: 2px;
     background-color: $phlox-bg-important;
 }
 
-.btn{
-    padding: 10px 40px;
-    border: none;
-    background-color: $phlox-bg-important;
-    cursor: pointer;
-}
+// separeted
 
-.paragraph{
-    font-size: 13px;
-    color: $phlox-text-paragraph
-}
-
-.d-flex{
-    display: flex;
-}
-
-.col-4{
-    width: calc((100% / 12) * 4);
-}
-.col-5{
-    width: calc((100% / 12) * 5);
-}
-.col-6{
-    width: calc((100% / 12) * 6);
-}
-.col-8{
-    width: calc((100% / 12) * 8);
-}
-.col-11{
-    width: calc((100% /12) * 11);
-}
-
-.container{
+// container
+.container {
     max-width: 1900px;
     width: 80%;
     margin: auto;
 }
 
-.gap-1{
-    gap: 1rem;
+// endcontainer
+
+// region column
+.col-4 {
+    width: calc((100% / 12) * 4);
 }
 
-.posi-rela{
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col-11 {
+    width: calc((100% /12) * 11);
+}
+
+// endregion column
+
+//region position
+.posi-rela {
     position: relative;
 }
 
-.posi-abso{
+.posi-abso {
     position: absolute;
 }
+
+//endregion position
+
+// region flex
+.d-flex {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+// endregion flex
+
+// region text
+.paragraph {
+    font-size: 13px;
+    color: $phlox-text-paragraph;
+
+}
+
+.space-letter {
+    letter-spacing: 4px;
+}
+
+// endregion text
+
+// region btn
+.btn {
+    padding: 10px 40px;
+    border: none;
+    background-color: $phlox-bg-important;
+    cursor: pointer;
+
+    &:hover {
+        color: $phlox-text-light;
+        background-color: $phlox-bg-btn-primary;
+    }
+}
+
+// endregion btn
