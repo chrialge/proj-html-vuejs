@@ -4,6 +4,7 @@ import OurConsultation from './components-section/OurConsultation.vue';
 import AboutUs from './components-section/AboutUs.vue';
 import Project from './components-section/Project.vue';
 import Testimonial from './components-section/Testimonial.vue';
+import Blog from './components-section/Blog.vue'
 
 export default {
     name: 'MainApp',
@@ -13,6 +14,7 @@ export default {
         AboutUs,
         Project,
         Testimonial,
+        Blog,
     },
     data() {
         return {
@@ -39,28 +41,7 @@ export default {
     <Testimonial/>
     <!-- /#testimonial -->
 
-    <section id="blog">
-        <div class="container">
-            <div class="section">
-                <hr>
-                <span>BLOG</span>
-            </div>
-            <div class="header-blog">
-                <h1>THE RECENT NEWS YOU MUST READ IT</h1>
-                <button>view all</button>
-            </div>
-            <div class="row">
-                <div class="img col-2">
-                    <div class="banner-img">Lorem, ipsum dolor.</div>
-                </div>
-                <div class="img col-2">
-                    <div class="banner-img">Lorem, ipsum dolor.</div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
+    <Blog/>
     <!-- /#blog -->
 
     <section id="banner">

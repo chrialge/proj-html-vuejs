@@ -26,13 +26,6 @@
                 margin-bottom: 30px;
             }
             .btn-jumbotron{
-                
-                .btn{
-                    padding: 15px 40px;
-                    border: none;
-                    background-color: $phlox-bg-important;
-                    cursor: pointer;
-                }
 
                 .btn-play{
                     color: $phlox-bg-important;
@@ -293,9 +286,15 @@
         width: 85%;
         margin: auto;
 
+        .section>.separeted_small{
+            display: inline-block;
+            margin-right: 15px;
+        }
+
         .header-blog{
             display: flex;
             justify-content: space-between;
+            margin-bottom: 30px
         }
 
         .row{
@@ -304,15 +303,40 @@
 
             .col-2{
                 width: 50%;
-                height: 400px;
                 position: relative;
+
+                img{
+                    width: 100%;
+                }
 
                 .banner-img{
                     position: absolute;
-                    padding: 30px;
+                    padding: 20px ;
                     right: 0;
-                    bottom: 0;
-                    margin-bottom: -20px;
+                    top: 60%;
+
+                    
+                    background-color: $phlox-bg-light;
+                    color: $phlox-text-dark;
+                    width: 80%;
+
+                    &>*{
+                        margin: 20px 0;
+                    }
+
+                    .info_banner_img{
+                        color: $phlox-text-date;
+                        font-size: 13px;
+                        
+                        span{
+                            margin-right: 15px;
+                        }
+                    }
+
+                    p{
+                        color: $phlox-text-paragraph;
+                        font-size: 13px;
+                    }
                 }
             }
         }
