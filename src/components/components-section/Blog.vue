@@ -19,11 +19,11 @@ export default {
                 <div class="separeted_small"></div>
                 <span>BLOG</span>
             </div>
-            <div class="header-blog">
+            <div class="header-blog d-flex">
                 <h1>THE RECENT NEWS YOU MUST READ IT</h1>
                 <button class="btn">view all</button>
             </div>
-            <div class="row">
+            <div class="row d-flex gap-1">
                 <div class="img col-2" v-for="img in images">
                     <img :src="'../../../public/images/' + img " 
                         alt="startup business people and strategy board">
@@ -35,9 +35,9 @@ export default {
                         <h3>
                             Canadian Consulting Firm acquired by UK Giant
                         </h3>
-                        <p>
+                        <p class="paragraph">
                             When, while lovely valley teems with vapour around meand eridian sun strikes the upper
-                            impernetraable foliage of my trees, and but a
+                            impernetraable foliage of my trees, and but a ...
                         </p>
                     </div>
                 </div>

@@ -5,7 +5,9 @@ $phlox-bg-light: #FFFFFF;
 $phlox-bg-dark: #000000E6;
 $phlox-bg-important: #39FFBF;
 $phlox-bg-chat: #527CEB;
-$phlox-bg-btn-secondary: #3D3D3D;
+$phlox-bg-btn-secondary: #36354C;
+$phlox-bg-btn-secondary: #201E38;
+
 
 // colors text
 $phlox-text-light: #FFFFFF;
@@ -37,5 +39,30 @@ $phlox-border-light: #FFFFFF;
     cursor: pointer;
 }
 
+.paragraph{
+    font-size: 13px;
+    color: $phlox-text-paragraph
+}
 
+.d-flex{
+    display: flex;
+}
+
+.col-3{
+    width: calc((100% / 12)*4);
+}
+
+.col-6{
+    width: calc((100% / 12) * 6);
+}
+
+.container{
+    max-width: 1900px;
+    width: 80%;
+    margin: auto;
+}
+
+.gap-1{
+    gap: 1rem;
+}
 

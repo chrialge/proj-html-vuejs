@@ -20,7 +20,7 @@ export default {
                 <div class="separeted_small"></div>
                 <span>PROJECT</span>
             </div>
-            <div class="header-project">
+            <div class="header-project d-flex">
                 <h1>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h1>
                 <div class="btn-prev-next">
                     <button>
@@ -31,7 +31,7 @@ export default {
                     </button>
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-flex gap-1">
                 <div class="col-3" v-for="img in images">
                     <img :src="'../../../public/images/' + img" alt="">
                 </div>

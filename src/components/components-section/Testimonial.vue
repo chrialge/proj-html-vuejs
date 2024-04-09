@@ -13,9 +13,9 @@ export default {
     <section id="testimonial">
         <div class="container">
             <div class="container_header">
-                <div class="section">
-                    <span>TESTIMONIAL</span>
-                    <div class="container-sepreted">
+                <div class="section d-flex">
+                    <span class="col-6">TESTIMONIAL</span>
+                    <div class="container-separeted col-6">
                        <div class="separeted_small"></div> 
                     </div>
                     
@@ -23,15 +23,15 @@ export default {
                 <h1>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h1>
             </div>
             <div class="container_testimonials">
-                <div class="testimonials">
+                <div class="testimonials d-flex">
                     <div class="testimonial col-3" v-for="n in 3">
-                        <p>
+                        <p class="paragraph">
                             When, while lovely valley teems with vapour around meand eridian sun strikes the upper impernetraable foliage of my trees, and but a thousand unknow plant are noticed when i hear the buzz of the little.
                         </p>
                         <h4>
                             Vera Duncan
                         </h4>
-                        <span>Amazon inc.</span>
+                        <span class="paragraph">Amazon inc.</span>
                     </div>
                 </div>
             </div>

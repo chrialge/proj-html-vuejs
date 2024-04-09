@@ -5,6 +5,7 @@ import AboutUs from './components-section/AboutUs.vue';
 import Project from './components-section/Project.vue';
 import Testimonial from './components-section/Testimonial.vue';
 import Blog from './components-section/Blog.vue'
+import Banner from './components-section/Banner.vue'
 
 export default {
     name: 'MainApp',
@@ -15,6 +16,7 @@ export default {
         Project,
         Testimonial,
         Blog,
+        Banner,
     },
     data() {
         return {
@@ -26,32 +28,33 @@ export default {
 
 <template>
 
-    <Jumbotron />
-    <!-- /#jumbotron -->
+    <main id="sitemain">
 
-    <OurConsultation/>
-    <!-- /#our-consultation -->
+        <Jumbotron />
+        <!-- /#jumbotron -->
 
-    <AboutUs/>
-    <!-- /#about-us -->
+        <OurConsultation />
+        <!-- /#our-consultation -->
 
-    <Project/>
-    <!-- /#project -->
+        <AboutUs />
+        <!-- /#about-us -->
 
-    <Testimonial/>
-    <!-- /#testimonial -->
+        <Project />
+        <!-- /#project -->
 
-    <Blog/>
-    <!-- /#blog -->
+        <Testimonial />
+        <!-- /#testimonial -->
 
-    <section id="banner">
-        <div class="info_banner">
-            <h1>LET'S TALK ABOUT WORK</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor?</p>
-            <button>get started</button>
-        </div>
-    </section>
-    <!-- /#banner -->
+        <Blog />
+        <!-- /#blog -->
+
+        <Banner />
+        <!-- /#banner -->
+        
+    </main>
+    <!-- /#sitemain -->
+
+
 </template>
 
 <style></style>
