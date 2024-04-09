@@ -1,8 +1,9 @@
 <script>
 import Jumbotron from './components-section/Jumbotron.vue';
 import OurConsultation from './components-section/OurConsultation.vue';
-import AboutUs from './components-section/AboutUs.vue'
-import Project from './components-section/Project.vue'
+import AboutUs from './components-section/AboutUs.vue';
+import Project from './components-section/Project.vue';
+import Testimonial from './components-section/Testimonial.vue';
 
 export default {
     name: 'MainApp',
@@ -11,6 +12,7 @@ export default {
         OurConsultation,
         AboutUs,
         Project,
+        Testimonial,
     },
     data() {
         return {
@@ -34,53 +36,7 @@ export default {
     <Project/>
     <!-- /#project -->
 
-    <section id="testimonial">
-        <div class="container">
-            <div class="container_header">
-                <div class="section">
-                    <span>testimonial</span>
-                    <hr>
-                </div>
-                <h1>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h1>
-            </div>
-            <div class="container_testimonials">
-                <div class="testimonials">
-                    <div class="testimonial col-3">
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates, delectus
-                            nesciunt odio debitis commodi blanditiis quo accusamus quos laboriosam.
-                        </p>
-                        <h5>
-                            Lorem, ipsum.
-                        </h5>
-                        <span>Lorem.</span>
-                    </div>
-                    <div class="testimonial col-3">
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates, delectus
-                            nesciunt odio debitis commodi blanditiis quo accusamus quos laboriosam.
-                        </p>
-                        <h5>
-                            Lorem, ipsum.
-                        </h5>
-                        <span>Lorem.</span>
-                    </div>
-                    <div class="testimonial col-3">
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates, delectus
-                            nesciunt odio debitis commodi blanditiis quo accusamus quos laboriosam.
-                        </p>
-                        <h5>
-                            Lorem, ipsum.
-                        </h5>
-                        <span>Lorem.</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
+    <Testimonial/>
     <!-- /#testimonial -->
 
     <section id="blog">

@@ -1,0 +1,44 @@
+<script>
+export default {
+    name: 'Testimonial',
+    data() {
+
+
+        return {}
+    }
+}
+</script>
+
+<template>
+    <section id="testimonial">
+        <div class="container">
+            <div class="container_header">
+                <div class="section">
+                    <span>TESTIMONIAL</span>
+                    <div class="container-sepreted">
+                       <div class="separeted_small"></div> 
+                    </div>
+                    
+                </div>
+                <h1>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h1>
+            </div>
+            <div class="container_testimonials">
+                <div class="testimonials">
+                    <div class="testimonial col-3" v-for="n in 3">
+                        <p>
+                            When, while lovely valley teems with vapour around meand eridian sun strikes the upper impernetraable foliage of my trees, and but a thousand unknow plant are noticed when i hear the buzz of the little.
+                        </p>
+                        <h4>
+                            Vera Duncan
+                        </h4>
+                        <span>Amazon inc.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</template>
+
+<style></style>

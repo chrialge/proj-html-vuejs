@@ -234,7 +234,20 @@
             margin-right: 7.5%;
         
             .section{
-                text-align: center;
+                display: flex;
+                align-items: baseline;
+
+                &>*{
+                    width: 50%;
+                }
+
+                span{
+                    text-align: end;
+                }
+                .container-sepreted{
+                    display: flex;
+                    justify-content:flex-end ;
+                }
             }
 
             h1{
@@ -256,6 +269,15 @@
 
                     p{
                         margin-bottom: 30px;
+                        color: $phlox-text-paragraph;
+                        font-size: 13px;
+                    }
+                    h4{
+                        color: $phlox-text-dark;
+                    }
+                    span{
+                        color: $phlox-text-paragraph;
+                        font-size: 13px;
                     }
                 }
             }
