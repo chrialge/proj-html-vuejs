@@ -17,37 +17,37 @@ export default {
     methods: {
 
         prev(){
-            const length = this.images.length
+            const length = this.images.length;
             let incremental = this.activeImage.map((number) => {
                 number --;
                 if(number == -1){
-                    number = length -1
+                    number = length -1;
                 }
-                return number
+                return number;
             })
 
-            console.log(incremental)
-            this.activeImage = incremental
-            console.log(this.activeImage)
+            console.log(incremental);
+            this.activeImage = incremental;
+            console.log(this.activeImage);
         },
 
         next() {
-            const length = this.images.length
+            const length = this.images.length;
             let incremental = this.activeImage.map((number) => {
                 number ++;
-                return number
+                return number;
             })
             if(incremental.includes(length)){
-                incremental = [0,1,2]
+                incremental = [0,1,2];
             }
-            console.log(incremental)
-            this.activeImage = incremental
-            console.log(this.activeImage)
+            console.log(incremental);
+            this.activeImage = incremental;
+            console.log(this.activeImage);
         },
         verify(index) {
             if (this.activeImage.includes(index)) {
                 // console.log(index)
-                return true
+                return true;
             }
         }
     }
