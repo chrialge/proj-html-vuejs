@@ -9,7 +9,7 @@ export default {
                 '221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg',
                 'z1el4c4p-790x592.jpg',
                 'oliver-ragfelt-488196-2.jpg',
-                'public/images/oliver-ragfelt-488196-unsplash.jpg'
+                'oliver-ragfelt-488196-unsplash.jpg'
 
             ]
         }
@@ -20,11 +20,12 @@ export default {
             const length = this.images.length;
             let incremental = this.activeImage.map((number) => {
                 number --;
-                if(number == -1){
-                    number = length -1;
-                }
                 return number;
             })
+            if(incremental.includes(-1)){
+                console.log('ciao')
+                incremental = [2, 3, 4]
+            }
 
             console.log(incremental);
             this.activeImage = incremental;
@@ -47,7 +48,7 @@ export default {
         verify(index) {
             if (this.activeImage.includes(index)) {
                 // console.log(index)
-                return true;
+                return true
             }
         }
     }
