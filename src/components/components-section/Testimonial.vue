@@ -28,9 +28,9 @@ export default {
             </div>
             <div class="container_testimonials">
                 <div class="testimonials d-flex">
-                    <div class="testimonial col-4 posi-rela" v-for="testimonial in testimonials">
+                    <div class="testimonial col-4 posi-rela d-flex" v-for="testimonial in testimonials">
                         <img class="posi-abso" :src="'/public/images/' + testimonial.img" alt="">
-                        <div class="info-testimonial">
+                        <div class="info-testimonial posi-rela">
                             <p class="paragraph">
                                 When, while lovely valley teems with vapour around meand eridian sun strikes the upper
                                 impernetraable foliage of my trees, and but a thousand unknow plant are noticed when i
