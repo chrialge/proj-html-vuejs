@@ -16,13 +16,16 @@ export default {
     },
     methods: {
 
-        prev(){
+        /**
+         * funzione che manda indietrole immagini dello slider del testimonial
+         */
+        prev() {
             const length = this.images.length;
             let incremental = this.activeImage.map((number) => {
-                number --;
+                number--;
                 return number;
             })
-            if(incremental.includes(-1)){
+            if (incremental.includes(-1)) {
                 console.log('ciao')
                 incremental = [2, 3, 4]
             }
@@ -32,25 +35,22 @@ export default {
             console.log(this.activeImage);
         },
 
+        /**
+        * funzione che manda avanti le immagini dello slider del testimonial
+        */
         next() {
             const length = this.images.length;
             let incremental = this.activeImage.map((number) => {
-                number ++;
+                number++;
                 return number;
             })
-            if(incremental.includes(length)){
-                incremental = [0,1,2];
+            if (incremental.includes(length)) {
+                incremental = [0, 1, 2];
             }
             console.log(incremental);
             this.activeImage = incremental;
             console.log(this.activeImage);
         },
-        verify(index) {
-            if (this.activeImage.includes(index)) {
-                // console.log(index)
-                return true
-            }
-        }
     }
 }
 </script>
@@ -74,7 +74,8 @@ export default {
                 </div>
             </div>
             <div class="row d-flex gap-1">
-                <div class="col-4 posi-rela" v-for="(img, index) in images" v-show="this.verify(index)">
+                <div class="col-4 posi-rela" v-for="(img, index) in images"
+                    :class="{ 'display-none': !activeImage.includes(index) }">
                     <img :src="'/public/images/' + img" alt="">
                     <div class="overlay d-flex">
                         <div class="info-product d-flex">
