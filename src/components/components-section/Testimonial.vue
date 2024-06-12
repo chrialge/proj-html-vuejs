@@ -29,7 +29,7 @@ export default {
             <div class="container_testimonials">
                 <div class="testimonials d-flex">
                     <div class="testimonial col-4 posi-rela d-flex" v-for="testimonial in testimonials">
-                        <img class="posi-abso" :src="'images/' + testimonial.img" alt="">
+                        <img class="posi-abso" :src="'/images/' + testimonial.img" alt="">
                         <div class="info-testimonial posi-rela">
                             <p class="paragraph">
                                 When, while lovely valley teems with vapour around meand eridian sun strikes the upper

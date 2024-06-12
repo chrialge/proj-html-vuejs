@@ -25,7 +25,7 @@ export default {
             </div>
             <div class="row d-flex gap-1">
                 <div class="img col-2" v-for="img in images">
-                    <img :src="'images/' + img" alt="startup business people and strategy board">
+                    <img :src="'/images/' + img" alt="startup business people and strategy board">
                     <div class="banner-img">
                         <div class="info_banner_img">
                             <span>July 4,2019</span>
