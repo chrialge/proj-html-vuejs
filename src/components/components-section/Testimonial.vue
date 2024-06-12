@@ -3,10 +3,10 @@ export default {
     name: 'Testimonial',
     data() {
         return {
-            testimonials:[
-                {img: 'oliver-ragfelt-488196-2.jpg', name: 'Vera Duncan'},
-                {img: 'oliver-ragfelt-488196-unsplash.jpg', name: 'Oliver Garrison'},
-                {img: '12679.jpg', name: 'John Smith'}
+            testimonials: [
+                { img: 'oliver-ragfelt-488196-2.jpg', name: 'Vera Duncan' },
+                { img: 'oliver-ragfelt-488196-unsplash.jpg', name: 'Oliver Garrison' },
+                { img: '12679.jpg', name: 'John Smith' }
             ]
         }
     }
@@ -29,7 +29,7 @@ export default {
             <div class="container_testimonials">
                 <div class="testimonials d-flex">
                     <div class="testimonial col-4 posi-rela d-flex" v-for="testimonial in testimonials">
-                        <img class="posi-abso" :src="'/public/images/' + testimonial.img" alt="">
+                        <img class="posi-abso" :src="'images/' + testimonial.img" alt="">
                         <div class="info-testimonial posi-rela">
                             <p class="paragraph">
                                 When, while lovely valley teems with vapour around meand eridian sun strikes the upper

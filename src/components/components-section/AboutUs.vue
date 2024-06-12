@@ -12,8 +12,8 @@ export default {
     <section id="about-us">
         <div class="container_fluid d-flex">
             <div class="left col-6">
-                <img src="/public/images/business-people-working-together-on-project-and-5FHSKBL.jpg" 
-                alt="people working together on project">
+                <img src="images/business-people-working-together-on-project-and-5FHSKBL.jpg"
+                    alt="people working together on project">
             </div>
             <div class="right col-5">
                 <div class="section">
@@ -22,7 +22,10 @@ export default {
                 </div>
                 <h1>WE MAKE YOUR STRATEGY WORK</h1>
                 <p class="paragraph">
-                    When, while lovely valley teems with vapour around meand eridian sun strikes the upper impernetraable foliage of my trees, and but a thousand unknow plant are noticed when i hear the buzz of the little world among the stalks and grow familiar indescribable forms of the insects and files, the i feel the presence of the almighty
+                    When, while lovely valley teems with vapour around meand eridian sun strikes the upper
+                    impernetraable foliage of my trees, and but a thousand unknow plant are noticed when i hear the buzz
+                    of the little world among the stalks and grow familiar indescribable forms of the insects and files,
+                    the i feel the presence of the almighty
                 </p>
             </div>
             <div class="banner d-flex col-11 posi-rela">
@@ -31,7 +34,8 @@ export default {
                 </div>
                 <div class="right_banner">
                     <p>
-                        When, while lovely valley teems with vapour around meand eridian sun strikes the upper impernetraable foliage of my trees, and but a thousand unknow
+                        When, while lovely valley teems with vapour around meand eridian sun strikes the upper
+                        impernetraable foliage of my trees, and but a thousand unknow
                     </p>
 
                 </div>
