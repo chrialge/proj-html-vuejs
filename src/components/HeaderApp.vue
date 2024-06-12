@@ -4,15 +4,11 @@ export default {
   data() {
     return {
       msg: 'header',
-      navbar:[
-        {name:'HOME', href:'#jumbotron'},
-        {name:'ABOUT', href:'#about-us'},
-        {name:'PROJECTS', href:'#projects'},
-        {name:'SERVICES', href:'#testimonials'},
-        {name:'BLOG', href:'#blog'},
-        {name:'CONTACT', href:'#site-footer'}
-      ]
+
     }
+  },
+  props: {
+    navbar: Array,
   }
 }
 </script>

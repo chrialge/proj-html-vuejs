@@ -7,7 +7,15 @@ export default {
   name: app,
   data() {
     return {
-      msg: 'bella'
+      msg: 'bella',
+      navbar:[
+        {name:'HOME', href:'#jumbotron'},
+        {name:'ABOUT', href:'#about-us'},
+        {name:'PROJECTS', href:'#projects'},
+        {name:'SERVICES', href:'#testimonials'},
+        {name:'BLOG', href:'#blog'},
+        {name:'CONTACT', href:'#site-footer'}
+      ]
     }
   },
   components: {
@@ -20,11 +28,11 @@ export default {
 <template>
 
 
-  <HeaderApp />
+  <HeaderApp :navbar="navbar"/>
   <MainApp />
   <FooterApp />
 
-  <div class="actions d-flex">
+  <div class="actions d-flex"> 
     <div class="page-up">
       <a href="#">
         <i class="fa-solid fa-arrow-up-long"></i>
