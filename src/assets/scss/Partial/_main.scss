@@ -52,6 +52,48 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    @media screen and (max-width: 900px){
+
+        .right{
+            display: none;
+        }
+
+        .left{
+            background-image: url('/public/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;  
+
+            &>.jumbotron_info{
+
+                &>h1{
+                    width: 100%;
+                    max-width: 800px;
+
+                }
+            }
+        }
+
+        .col-4{
+            padding: 70px 10px;
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width:700px) {
+        .left{
+
+
+            &>.jumbotron_info{
+
+                &>h1{
+                    font-size: 40px;
+
+                }
+            }
+        }
+    }
 }
 
 // endregion Jumbotron
@@ -81,11 +123,21 @@
                     width: 50%;
                 }
             }
+
+
+
         }
 
         .row {
             flex-wrap: wrap;
             gap: 100px;
+
+            @media screen and (max-width: 900px){
+        
+                .col-6-50{
+                    width: 100% !important;
+                }
+            }
 
             .col-6-50 {
                 width: calc(50% - 50px);
@@ -110,6 +162,14 @@
 
         }
     }
+
+    @media screen and (max-width: 500px) {
+        .container-sm{
+            width: 95%;
+        }
+    }
+
+
 }
 
 // endregion our-consultation
@@ -177,6 +237,68 @@
             }
         }
     }
+
+    @media screen and (max-width: 990px){
+        .container_fluid>.top-about-us {
+            flex-wrap: wrap;
+            gap: 20px;
+            flex-direction: column-reverse;
+            
+
+            &>.col-6, &>.col-5{
+                width: 100%;
+            }
+
+            &>.col-5{
+                padding-top: 40px;
+            }
+        }
+
+        .container_fluid{
+            &>.col-11{
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        
+        .container_fluid>.top-about-us {
+
+            &>.col-5{
+                padding: 40px 10px 10px;
+            }
+        }
+
+        .container_fluid {
+            .right {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        
+        .container_fluid{
+            &>.col-11{
+                flex-wrap: wrap;
+                gap: 10px
+            }
+        }
+
+        
+        .container_fluid {
+
+    
+    
+            .banner {
+
+                padding: 10px 10px 50px;
+            }
+        }
+
+    }
+
 }
 
 // region about-us
@@ -276,6 +398,48 @@
 
         }
     }
+
+    @media screen and (max-width: 900px) {
+        
+        .container {
+
+
+    
+            .header-project {
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+    
+                h1 {
+                    font-size: 20px;
+                    width: 100%;
+                    padding: 20px 0;
+                }
+    
+                .btn-prev-next {
+    
+                    button {
+                        cursor: pointer;
+                        background-color: $phlox-bg-btn-next-prev;
+                        padding: 7px;
+                        border: none;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            .row{
+
+                &>.col-4:nth-child(n + 2){
+                    display: none;
+                }
+
+                &>.col-4:first-child{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 // end region project
@@ -286,6 +450,8 @@
 
     .container_testimonial {
         margin-left: 10%;
+
+
 
         .container_header {
             margin-right: 10%;
@@ -356,6 +522,48 @@
                 }
             }
         }
+
+
+
+    }
+    @media screen and (max-width: 1250px) {
+            
+        .container_testimonial {
+            margin-left: 0;
+
+            .container_testimonials{
+                padding-right: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px){
+        
+        .container_testimonial {
+            margin-left: 0;
+
+            .container_header{
+                margin: 0;
+                padding: 10px;
+
+                &>h1{
+                    
+                    margin: 0;
+                }
+            }
+            .container_testimonials{
+                padding-right: 0;
+
+                &>.testimonials{
+                    flex-wrap: wrap;
+
+                    &>.col-4{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -422,10 +630,38 @@
 
                     .col-2 {
                         width: 100%;
+
+
+
                     }
                 }
 
             }
+
+        @media screen and (max-width: 900px){
+
+            .row{
+
+                .col-2{
+
+                    .banner-img {
+                        top: 60%;
+                        padding: 10px;
+                        width: 100%;
+
+                        &>*{
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+
+            .header-blog{
+                padding-top: 20px;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+        }
     }
 }
 

@@ -45,3 +45,16 @@
         }
     }
 }
+
+
+@media (max-width: 1100px){
+    #our-consultation .container-sm .title .width-long {
+        width: 40%;
+    }
+}
+
+@media (max-width: 900px){
+    #our-consultation .container-sm .title .width-long {
+        width: 20%;
+    }
+}

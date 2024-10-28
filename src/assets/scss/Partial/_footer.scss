@@ -73,4 +73,34 @@
             }
         }
     }
+
+    @media screen and (max-width: 900px){
+
+        .container{
+
+            &>.footer_top{
+                flex-wrap: wrap;
+                gap: 20px;
+
+
+                &>.navbar>ul{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+    }
+
+    
+    @media screen and (max-width: 750px){
+
+        .container{
+
+            &>.footer-bottom{
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+
+    }
 }
