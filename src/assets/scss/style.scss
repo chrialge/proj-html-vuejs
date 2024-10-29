@@ -32,15 +32,16 @@
     .chat {
         width: 100%;
         background-color: $phlox-bg-chat;
-        padding: 19px;
+        padding: 15px;
         border-radius: 50%;
+        cursor: pointer;
 
         a {
             text-decoration: none;
             color: $phlox-text-light;
 
             i {
-                font-size: 28px;
+                font-size: 20px;
             }
         }
     }
@@ -50,6 +51,15 @@
     .actions{
         bottom: 20px;
         right: 20px;
+
+        .chat{
+            padding: 7px 10px;
+            a>i{
+                font-size: 15px;
+              
+            }
+        }
+
     }
 }
 

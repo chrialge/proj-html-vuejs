@@ -32,6 +32,16 @@
 
             .btn-jumbotron {
 
+                .btn{
+                    border: 1px solid transparent;
+
+                    &:hover{
+                        transition: all 0.3s ease-in-out;
+                        border-color: white;
+                        box-shadow: 2px 2px $phlox-bg-primary;
+                    }
+                }
+
                 .btn-play {
                     color: $phlox-bg-important;
                     background-color: transparent;
@@ -166,6 +176,19 @@
     @media screen and (max-width: 500px) {
         .container-sm{
             width: 95%;
+
+            .title{
+                flex-direction: column;
+
+                &>h1{
+                    font-size: 20px;
+                }
+
+                .width-long{
+                    width: 100%;
+                }
+            }
+
         }
     }
 
@@ -239,10 +262,16 @@
     }
 
     @media screen and (max-width: 990px){
+
+
         .container_fluid>.top-about-us {
             flex-wrap: wrap;
             gap: 20px;
             flex-direction: column-reverse;
+
+            .right>h1{
+                font-size: 20px;
+            }
             
 
             &>.col-6, &>.col-5{
@@ -257,6 +286,10 @@
         .container_fluid{
             &>.col-11{
                 width: 100%;
+
+                .left_banner>h1{
+                    font-size: 20px;
+                }
             }
         }
     }

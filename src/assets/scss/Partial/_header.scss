@@ -29,20 +29,23 @@
 
                 li{
                     padding: 15px 0;
+                    border-top: 3px solid transparent;
+                    
                     
 
                     a{
                         text-decoration: none;
                         color: $phlox-text-paragraph;
-                        
+                        font-size: 800;
                     }
                     &:hover{
-                        border-top: 3px solid;
+                        transition: all 0.3s ease-in-out;
+                        border-color: white;
                     }
 
                     &:hover, &:hover a{
                         color: $phlox-text-light;
-                        font-weight: 800;
+                        
                     }
                 }
             }

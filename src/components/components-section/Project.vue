@@ -9,8 +9,6 @@ export default {
                 { id: 0, img: 'DRY-1-790x592.jpg' },
                 { id: 1, img: '221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg' },
                 { id: 2, img: 'z1el4c4p-790x592.jpg' },
-                { id: 3, img: 'oliver-ragfelt-488196-2.jpg' },
-                { id: 4, img: 'oliver-ragfelt-488196-unsplash.jpg' },
             ]
         }
     },
@@ -20,66 +18,88 @@ export default {
          * funzione che manda indietrole immagini dello slider del testimonial
          */
         prev() {
+
+            // salvo la lunghezza della finestra
             const widthDevice = window.innerWidth;
 
-            const containerCrad = document.querySelector('#project>.container>.row');
+            // salvo le card 
             const boxImageEl = document.querySelectorAll(".box-image");
 
+            // se la lunghezza della finestra e minore di 900
             if (widthDevice <= 900) {
 
-
+                // se activeImageMobile e uguale a 0
                 if (this.activeImageMobile === 0) {
-                    this.activeImage = this.images.length - 1
 
+                    // activeImageMobile e uguale alla lunghezza di image meno 1
+                    this.activeImageMobile = this.images.length - 1
+
+
+                    // itero nelle immagini
                     this.images.forEach((img, index) => {
+
+                        // se l'index e uguale ad activeImageMobile
                         if (index === this.activeImageMobile) {
 
+                            // cambio l'attributo src dell'immagine
                             boxImageEl[0].setAttribute('src', `./images/${img.img}`)
                         }
                     })
 
 
                 } else {
+
+                    // decremento activeImageMobile
                     this.activeImageMobile--
 
-
+                    // itero nelle immagini
                     this.images.forEach((img, index) => {
+
+                        // se l'index e uguale activeImageMobile
                         if (index === this.activeImageMobile) {
 
+                            // cambio l'attributo src dell'immagine
                             boxImageEl[0].setAttribute('src', `./images/${img.img}`)
                         }
                     })
-
-
-
                 }
             } else {
-                console.log(document.querySelectorAll(".box-image"));
 
-
-
-
-
+                // salvo i numeri mappati
                 const numberImage = this.activeImage.map((number) => {
-                    if (number === (this.images.length - 1)) {
-                        return 4
+
+                    // se il numro e 0
+                    if (number === 0) {
+
+                        // return della lunghezza di images meno 1
+                        return this.images.length - 1
                     } else {
+
+                        // return del numero decrementato
                         return number - 1
                     }
 
                 })
+
+                // sovrascrivo l'istanza activeImage con numberImage
                 this.activeImage = numberImage
 
-                console.log(this.activeImage, numberImage);
-
+                // inizializzo un contattore
                 let count = 0
 
+                // itero in activeImage
                 this.activeImage.forEach((imagenew) => {
 
-
+                    // itero nelle immagine
                     this.images.forEach((img, index) => {
+
+                        // se l'index e uguale a imagenew
                         if (index === imagenew) {
+
+                            // cambio l'attributo src delle immmagini
                             boxImageEl[count].setAttribute('src', `./images/${img.img}`)
+
+                            //incremento contatore
                             count++
 
                         }
@@ -95,33 +115,46 @@ export default {
         * funzione che manda avanti le immagini dello slider del testimonial
         */
         next() {
+
+            // salvo la lunghezza della finestra
             const widthDevice = window.innerWidth;
 
-            const containerCrad = document.querySelector('#project>.container>.row');
+            // salvo le card 
             const boxImageEl = document.querySelectorAll(".box-image");
 
+            // se la lunghezza e superiore a 900 pixel
             if (widthDevice <= 900) {
-                console.log(this.activeImageMobile)
 
-
+                // se activeImageMobile e uguale alla lunghezza di images meno uno
                 if (this.activeImageMobile === (this.images.length - 1)) {
+
+                    // activeImageMobilr diventa 0
                     this.activeImageMobile = 0
 
+                    // itero in images
                     this.images.forEach((img, index) => {
+
+                        // se l'index di images e uguale a activeImageMobile
                         if (index === this.activeImageMobile) {
 
+                            // cambio attributto di src
                             boxImageEl[0].setAttribute('src', `./images/${img.img}`)
                         }
                     })
 
 
                 } else {
+
+                    // incremento di 1 activeImageMobile
                     this.activeImageMobile++
 
-
+                    // itero in images
                     this.images.forEach((img, index) => {
+
+                        // se l'index di images e uguale a activeImageMobile
                         if (index === this.activeImageMobile) {
 
+                            // cambio attributto di src
                             boxImageEl[0].setAttribute('src', `./images/${img.img}`)
                         }
                     })
@@ -130,32 +163,42 @@ export default {
 
                 }
             } else {
-                console.log(document.querySelectorAll(".box-image"));
 
-
-
-
-
+                // salvo i numeri mappati
                 const numberImage = this.activeImage.map((number) => {
-                    if (number === 4) {
+
+                    // se il numero e uguale alla lunghezza di images meno 1
+                    if (number === (this.images.length - 1)) {
+
+                        // ritorna 0
                         return 0
                     } else {
+
+                        // ritorna il numero incrementato di 1
                         return number + 1
                     }
 
                 })
+
+                // sovrascrivo l'istanta con numerImage
                 this.activeImage = numberImage
 
-                console.log(this.activeImage, numberImage);
-
+                // inizializzo un contattore
                 let count = 0
 
+                // itero in activeImage
                 this.activeImage.forEach((imagenew) => {
 
-
+                    // itero tra le immagini
                     this.images.forEach((img, index) => {
+
+                        // se l'index e uguale ad imagenew
                         if (index === imagenew) {
+
+                            // cambio lattributo dell'src
                             boxImageEl[count].setAttribute('src', `./images/${img.img}`)
+
+                            // incremento il contatore
                             count++
 
                         }
@@ -170,19 +213,23 @@ export default {
 
     },
     mounted() {
-        const containerCrad = document.querySelector('#project>.container>.row');
+        // salvo il nodo dove inseriro le card
+        const containerCard = document.querySelector('#project>.container>.row');
 
 
-
+        // salvo la lunghezza della finestra
         const widthDevice = window.innerWidth;
-        // const cardEl = document.querySelectorAll('.card-project');
 
+        // se la finestra e minore di 900 pixel
         if (widthDevice < 900) {
 
-
+            // ciclo tra le immagini
             this.images.forEach((img, index) => {
+
+                // se l'index delle immagini e uguale all'istanza activeImageMobile
                 if (index === this.activeImageMobile) {
 
+                    // costante dove contengo il markup e cambia l'immagine in base all'index
                     const markup = `
                         <div class="col-4 posi-rela card-project" >
                     <img src="./images/${img.img}" alt="" class="box-image">
@@ -200,18 +247,23 @@ export default {
                     </div>
                 </div>
                     `
-                    containerCrad.insertAdjacentHTML('beforeend', markup)
+                    // aggiungo al containeril markup
+                    containerCard.insertAdjacentHTML('beforeend', markup)
                 }
             })
 
         } else {
 
+            // ciclo nell'array delle immagini attive
             this.activeImage.forEach((imageActive) => {
-                // console.log(imageActive)
 
+                // ciclo tra le immagine
                 this.images.forEach((img, index) => {
+
+                    // se l'immagine attiva e uguale all index
                     if (imageActive === index) {
 
+                        // costante dove contengo il markup e cambia l'immagine in base all'index
                         const markup = `
                         <div class="col-4 posi-rela card-project" >
                     <img src="./images/${img.img}" alt="" class="box-image">
@@ -229,7 +281,8 @@ export default {
                     </div>
                 </div>
                     `
-                        containerCrad.insertAdjacentHTML('beforeend', markup)
+                        // aggiungo al containeril markup
+                        containerCard.insertAdjacentHTML('beforeend', markup)
                     }
                 })
             })
