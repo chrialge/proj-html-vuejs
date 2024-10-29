@@ -16,7 +16,9 @@
 
         .logo>img{
             width: 90px;
+            
         }
+
 
         .navbar{
             
@@ -106,6 +108,8 @@
 
         nav{
 
+
+
             .navbar{
                 display: none;
             }
@@ -116,5 +120,34 @@
         }
 
         
+    }
+
+    @media screen and (max-width: 900px) {
+
+        nav{
+
+            .logo>img{
+
+                filter: drop-shadow(1px 6px $phlox-bg-primary);
+            }
+
+            .logo{
+                background-color: white;
+                padding: 10px;
+                border-radius: 20px;
+            }
+
+
+        }
+
+        
+    }
+
+
+}
+
+@media screen and (max-width: 720px) {
+    #site_header{
+        padding: 5px 0;
     }
 }
